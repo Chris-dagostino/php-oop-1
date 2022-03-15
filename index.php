@@ -6,7 +6,7 @@
         public $titolo;
         public $genere;
         public $orario;
-        public $durata;
+        public $durata= 5;
 
         //=> all’interno della classe è definito un costruttore
         public function __construct($titolo, $genere, $orario)
@@ -14,6 +14,7 @@
             $this->titolo = $titolo;
             $this->genere = $genere;
             $this->orario = $orario;
+            
             
         }
 
@@ -61,14 +62,14 @@
         echo "<h1>" . $guardianiDellaGalassia->titolo  . "</h1>";
         echo "<h1>" . $guardianiDellaGalassia->genere  . "</h1>";
         echo "<h1>" . $guardianiDellaGalassia->orario  . "</h1>";
-        echo "<h1>" . $guardianiDellaGalassia->durata  . "</h1>";
+        echo "<h1>" . $guardianiDellaGalassia->getDurata()  . "</h1>";
 
         echo "<hr>";
 
         echo "<h1>" . $uncharted->titolo  . "</h1>";
         echo "<h1>" . $uncharted->genere  . "</h1>";
         echo "<h1>" . $uncharted->orario  . "</h1>";
-        echo "<h1>" . $uncharted->durata  . "</h1>";
+        echo "<h1>" . $uncharted->getDurata()  . "</h1>";
 
     ?>
     
